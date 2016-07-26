@@ -43,6 +43,13 @@ h1 {
     font-size: 16px;
     margin: 0;
 }
+.page {
+    height: 100%;
+    min-height: 100%;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
 .top_line {
     background: #e1e1e1;
     height: 32px;
@@ -177,19 +184,38 @@ nav {
     position: relative;
     white-space: nowrap;
 }
-.menu >li:nth-child(2)> a:before {
+.menu >li.sub_menu_link> a:before {
     display: block;
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     float: right;
     position: absolute;
-    right: -25px;
-    top: 5px;
+    right: -20px;
+    top: 6px;
     background-size: cover;
     background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iZXhwYW5kLW1vcmUiPgoJCTxwb2x5Z29uIHBvaW50cz0iMjcwLjMsNTguNjUgMTUzLDE3NS45NSAzNS43LDU4LjY1IDAsOTQuMzUgMTUzLDI0Ny4zNSAzMDYsOTQuMzUgICAiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
 }
 
+.menu >li.sub_menu_link:hover> a:before{
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI4NC45MjkgMjg0LjkyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg0LjkyOSAyODQuOTI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTI4Mi4wODIsNzYuNTExbC0xNC4yNzQtMTQuMjczYy0xLjkwMi0xLjkwNi00LjA5My0yLjg1Ni02LjU3LTIuODU2Yy0yLjQ3MSwwLTQuNjYxLDAuOTUtNi41NjMsMi44NTZMMTQyLjQ2NiwxNzQuNDQxICAgTDMwLjI2Miw2Mi4yNDFjLTEuOTAzLTEuOTA2LTQuMDkzLTIuODU2LTYuNTY3LTIuODU2Yy0yLjQ3NSwwLTQuNjY1LDAuOTUtNi41NjcsMi44NTZMMi44NTYsNzYuNTE1QzAuOTUsNzguNDE3LDAsODAuNjA3LDAsODMuMDgyICAgYzAsMi40NzMsMC45NTMsNC42NjMsMi44NTYsNi41NjVsMTMzLjA0MywxMzMuMDQ2YzEuOTAyLDEuOTAzLDQuMDkzLDIuODU0LDYuNTY3LDIuODU0czQuNjYxLTAuOTUxLDYuNTYyLTIuODU0TDI4Mi4wODIsODkuNjQ3ICAgYzEuOTAyLTEuOTAzLDIuODQ3LTQuMDkzLDIuODQ3LTYuNTY1QzI4NC45MjksODAuNjA3LDI4My45ODQsNzguNDE3LDI4Mi4wODIsNzYuNTExeiIgZmlsbD0iIzAwYWVlZiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=); 
+}
+.sub_menu li:before {
+    content: ' ';
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGZpbGw9IiMwMGFlZWYiIGQ9Ik0yIDF2MTRsMTItN3oiLz4KPC9zdmc+Cg==);
+    height: 12px;
+    width: 12px;
+    left: 0;
+    background-size: cover;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 1px;
+    display: block;
+    float: left;
+    position: absolute;
+    margin-right: 5px;
+    top: 2px;
+}
 
 .menu >li> a:hover {
     border-bottom: 4px solid #fff;
@@ -223,6 +249,8 @@ nav {
 }
 .sub_menu li {
     margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
 }
 .sub_menu li:last-child{
     margin-bottom: 0px;
@@ -300,7 +328,7 @@ nav {
     margin-right: -257px;
     opacity: 0;
     filter: alpha(opacity: 0);
-    font-size: 81px;
+    font-size: 18px;
     font-weight: normal;
     font-style: normal;
     background: #fff;
@@ -355,6 +383,9 @@ nav {
     margin-right: -666px;
     top: -371px;
     z-index: 99;
+}
+.container {
+    overflow: hidden;
 }
 h2 {
     margin: 0;
@@ -486,11 +517,13 @@ h2 {
     display: inline-block;
     line-height: 16px;
     margin-bottom: 8px;
+    position: relative;
 }
 .title_text_chel {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 40px;
     color: #5d5d5d;
+    font-weight: bold;
 }
 .treatment_steps_container {
     text-align: center;
@@ -559,7 +592,7 @@ h2 {
     line-height: 16px;
     margin: 27px 0 18px;
 }
-.breadcrumbs {
+.breadcrumb {
     position: absolute;
    list-style: none;
     margin: 0;
@@ -569,26 +602,26 @@ h2 {
     font-size: 12px;
     top: 0;
 }
-.breadcrumbs li {
+.breadcrumb li {
     margin-left: 10px;
     /* padding-left: 10px; */
     color: #00aeef;
 }
-.breadcrumbs li:after {
+.breadcrumb li:after {
     content: '>';
     color: #818181;
     display: block;
     float: right;
     margin-left: 8px;
 }
-.breadcrumbs li a{
+.breadcrumb li a{
     color: #818181;
     text-decoration: none;
 }
-.breadcrumbs li a:hover{
+.breadcrumb li a:hover{
     color:#00aeef;
 }
-.breadcrumbs li:last-child:after {
+.breadcrumb li:last-child:after {
     display: none;
 }
 .content {
@@ -660,7 +693,6 @@ h2 {
 }
 .side_bar {
     float: right;
-    height: 250px;
     width: 29%;
     font-size: 12px;
 }
@@ -682,6 +714,273 @@ h2 {
 .name_doc {
     font-weight: bold;
     font-size: 16px;
-    color: #00aeef;
     margin-bottom: 5px;
+
+}
+.name_doc a {
+    color: #00aeef;
+
+}
+.name_doc a:hover {
+    text-decoration: none;
+    color: #484848;
+}
+/*человек*/
+.chel_img_pos {
+    display: inline-block;
+    position: relative;
+}
+.chel_item {
+    background-color: rgba(80, 72, 72, 0.45);
+    border: 2px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-left: 2px solid rgba(0,0,0,0);
+    /* border-top: 2px solid rgba(0,0,0,0); */
+    /* border-left: 2px solid rgba(0,0,0,0); */
+    /* border-right: 2px solid rgba(0,0,0,0); */
+    border-radius: 50px;
+    /* box-shadow: 0 0 35px #2187e7; */
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    -moz-animation: spin 4s infinite linear;
+    -webkit-animation: spin 4s infinite linear;
+}
+.chel_items:after {
+    content: attr(date-title);
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    display: none;
+    z-index: 99;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px 5px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #5d5d5d;
+}
+.chel_items:hover:after{
+    display: block;
+}
+.chel_item:hover{
+    
+    background-color: rgba(16, 15, 15, 0.45);
+    cursor: pointer;
+}
+.chel_items{
+    position: absolute;
+}
+.chel_items.suzhenie_sonnix_arterii {
+    top: 32px;
+    right: 151px;
+}
+.chel_items.trombi {
+    top: 142px;
+    left: 27px;
+}
+.chel_items.troficheskie_iazvi {
+    top: 216px;
+    left: -8px;
+}
+.chel_items.bol_v_oblasti_zhivota {
+    top: 173px;
+    left: 95px;
+
+}
+.chel_items.troficheskie_iazvi_right {
+    right: 46px;
+    top: 216px;
+}
+.chel_items.trombi_right{
+    right: 83px;
+    left: inherit;
+}
+.chel_items.bol_onimenie_nizhnix_konechnosti {
+    top: 322px;
+    left: 63px;
+}
+.chel_items.bol_onimenie_nizhnix_konechnosti:after {
+    right: -19px;
+    left: initial;
+}
+.chel_items.right.trombi_right:after {
+    right: -244px;
+    z-index: 99;
+}
+.chel_items.right.troficheskie_iazvi_right:after {
+    right: -152px;
+}
+.chel_items.suzhenie_sonnix_arterii:after {
+    right: -200px;
+}
+.chel_items.bol_v_oblasti_zhivota:after {
+    right: -185px;
+}
+.chel_items.bol_onimenie_nizhnix_konechnosti_right {
+    top: 322px;
+    right: 120px;
+}
+.chel_items.bol_onimenie_nizhnix_konechnosti_right:after {
+    right: -284px;
+}
+.chel_items.varikoz_tromboz_ven {
+    left: 61px;
+    top: 387px;
+}
+.chel_items.varikoz_tromboz_ven_right {
+    top: 387px;
+    right: 119px;
+}
+.chel_items.trombi_right {
+    right: 83px;
+    top: 142px;
+}
+.chel_items.troficheskie_iazvi_nog {
+    top: 448px;
+    left: 54px;
+}
+.chel_items.troficheskie_iazvi_nog_right {
+    top: 448px;
+    right: 118px;
+}
+.chel_items.varikoz_tromboz_ven_right:after {
+    right: -182px;
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    };
+}
+/*человек*/
+/*
+menu
+*/
+.storenie_list .sub_title li:before {
+    content: ' ';
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGZpbGw9IiMwMGFlZWYiIGQ9Ik0yIDF2MTRsMTItN3oiLz4KPC9zdmc+Cg==);
+    height: 11px;
+    width: 11px;
+    left: 0;
+    background-size: cover;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.storenie_list .sub_title li {
+    margin-bottom: 7px;
+}
+.storenie_list .sub_title li:last-child {
+    margin-bottom: 0px;
+}
+.storenie_list .sub_title li a {
+    color: #757575;
+}
+.sub_title_container {
+    position: absolute;
+    top: 0;
+    padding-top: 23px;
+    display: none;
+    z-index: 99;
+}
+.sub_title {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    white-space: nowrap;
+    border: 1px solid #d2c6c6;
+    list-style: none;
+    padding: 12px 10px 12px 15px;
+    overflow: visible;
+    width: 100%;
+}
+.stroenie_title:hover .sub_title_container{
+    display: block;
+}
+.stroenie_title:hover{
+    color:#00aeef;
+    border-bottom: 2px solid #00aeef;
+    cursor: pointer;
+}
+.storenie_list .sub_title li:hover a{
+    color:#00aeef;
+
+}
+.price_list {
+    padding: 0;
+    margin: 0;
+}
+.price_list li {
+    display: block;
+    float: none;
+    padding: 12px 0;
+    width: 95%;
+    font-weight: bold;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    margin: 0 auto 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(57, 188, 238, 0.39);
+    border: 2px solid rgba(0, 174, 239, 0.6);
+}
+.price_content {
+    width: 94%;
+    display: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+.price_content table {
+    width: 100%;
+}
+.price_content table tr td {
+    padding: 10px 0;
+    color: #6d6e71;
+    border-bottom: 1px dotted #b2b2b2;
+    width: 88%;
+}
+.price_list li span {
+    border-bottom: 2px solid #00aeef;
+    display: block;
+    padding-bottom: 5px;
+}
+.price_list li:hover {
+    background: #00aeef;
+    color: #fff;
+    
+}
+.price_list li:hover span {
+    border-bottom: 2px solid #fff; 
 }

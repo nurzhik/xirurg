@@ -39,3 +39,22 @@ $(document).ready(function() {
         onSliderLoaded: n
     })
 });
+$(document).ready(function() {
+ $('.price_name ').on('click', function () {
+        if($(this).hasClass('active')){
+
+            $(this).removeClass('active');
+            
+            $(this).children('.price_content').animate({height: "hide"}, "800");
+        }else{
+            $('.price_name').removeClass('active');
+            $('.price_name').children('.price_content').animate({height: "hide"}, "easein");
+            $(this).addClass('active');
+            $(this).children('.price_content').animate({height: "show"}, "easein");
+            
+    
+        }
+        
+        
+    });
+  });
